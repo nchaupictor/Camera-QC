@@ -96,7 +96,7 @@ while rval:
 
         #Pre processing
         #Use red channel to find top left coordinate
-        #Blur red channel with 5x5 kernal and run adaptive thresholding 
+        #Blur red channel with 5x5 kernel and run adaptive thresholding 
         r = cv2.blur(r,(5,5))
         rThresh = cv2.adaptiveThreshold(r,255,cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,13,2)
         cv2.imshow("rThresh",rThresh)
@@ -275,7 +275,7 @@ while rval:
             cv2.rectangle(imageROI,(screenCon[2][0]-6-6-2,cropY+YDist*2+50*2),(screenCon[2][0]-6-2,cropY+50*3+YDist*2),(0,255,0),1)
 
             cv2.imshow("ROI",imageROI)
-
+            #Test Git
             #Plot mean / std data 
 
             #Save data into csv 
